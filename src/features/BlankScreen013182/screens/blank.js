@@ -43,26 +43,22 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Sample text input placeholder"
-        multiline={true}
         style={styles.TextInput_4}
         value={this.state.TextInput_4}
         onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
       />
       <DateTimePicker
-        showIcon={false}
         date={this.state.DateTimePicker_5}
         onDateChange={selectedDate =>
           this.setState({ DateTimePicker_5: selectedDate })
         }
       />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         value={this.state.Switch_6}
         onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
       />
       <Slider value={50} minimumValue={0} maximumValue={100} />
       <DateTimePicker
-        showIcon={false}
         date={this.state.DateTimePicker_8}
         onDateChange={selectedDate =>
           this.setState({ DateTimePicker_8: selectedDate })
@@ -70,7 +66,7 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Sample text input placeholder"
-        multiline={true}
+        style={styles.TextInput_9}
         value={this.state.TextInput_9}
         onChangeText={nextValue => this.setState({ TextInput_9: nextValue })}
       />
@@ -113,5 +109,15 @@ const styles = StyleSheet.create({
   Slider_7: {},
   DateTimePicker_8: {},
   TextInput_9: {},
+  TextInput_10: {},
+  View_1: {},
+  Text_2: {},
+  TextInput_3: {},
+  TextInput_4: { height: 100 },
+  DateTimePicker_5: {},
+  Switch_6: {},
+  Slider_7: {},
+  DateTimePicker_8: {},
+  TextInput_9: { height: 100 },
   TextInput_10: {}
 })
