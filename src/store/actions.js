@@ -356,76 +356,91 @@ export const rest_auth_user_partial_updateFailed = (error, starter) => ({
   error,
   starter
 })
+
 export const api_v1_hngjf_list = () => ({ type: types.API_V1_HNGJF_LIST })
 export const api_v1_hngjf_listSucceeded = (response, starter) => ({
   type: types.API_V1_HNGJF_LIST_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_hngjf_listFailed = (error, starter) => ({
   type: types.API_V1_HNGJF_LIST_FAILED,
   error,
   starter
 })
+
 export const api_v1_hngjf_create = data => ({
   type: types.API_V1_HNGJF_CREATE,
   data
 })
+
 export const api_v1_hngjf_createSucceeded = (response, starter) => ({
   type: types.API_V1_HNGJF_CREATE_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_hngjf_createFailed = (error, starter) => ({
   type: types.API_V1_HNGJF_CREATE_FAILED,
   error,
   starter
 })
+
 export const api_v1_hngjf_read = () => ({ type: types.API_V1_HNGJF_READ })
 export const api_v1_hngjf_readSucceeded = (response, starter) => ({
   type: types.API_V1_HNGJF_READ_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_hngjf_readFailed = (error, starter) => ({
   type: types.API_V1_HNGJF_READ_FAILED,
   error,
   starter
 })
+
 export const api_v1_hngjf_update = data => ({
   type: types.API_V1_HNGJF_UPDATE,
   data
 })
+
 export const api_v1_hngjf_updateSucceeded = (response, starter) => ({
   type: types.API_V1_HNGJF_UPDATE_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_hngjf_updateFailed = (error, starter) => ({
   type: types.API_V1_HNGJF_UPDATE_FAILED,
   error,
   starter
 })
+
 export const api_v1_hngjf_partial_update = data => ({
   type: types.API_V1_HNGJF_PARTIAL_UPDATE,
   data
 })
+
 export const api_v1_hngjf_partial_updateSucceeded = (response, starter) => ({
   type: types.API_V1_HNGJF_PARTIAL_UPDATE_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_hngjf_partial_updateFailed = (error, starter) => ({
   type: types.API_V1_HNGJF_PARTIAL_UPDATE_FAILED,
   error,
   starter
 })
+
 export const api_v1_hngjf_delete = () => ({ type: types.API_V1_HNGJF_DELETE })
 export const api_v1_hngjf_deleteSucceeded = (response, starter) => ({
   type: types.API_V1_HNGJF_DELETE_SUCCEEDED,
   response,
   starter
 })
+
 export const api_v1_hngjf_deleteFailed = (error, starter) => ({
   type: types.API_V1_HNGJF_DELETE_FAILED,
   error,
