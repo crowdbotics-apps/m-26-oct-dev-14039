@@ -1,6 +1,6 @@
 import axios from "axios"
 const moctAPI = axios.create({
-  baseURL: "https://m-26-oct-dev-14039-prod.herokuapp.com/",
+  baseURL: "https://m-26-oct-dev-14039.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list(action) {
@@ -18,6 +18,26 @@ function api_v1_customtext_partial_update(action) {
   return moctAPI.patch(`/api/v1/customtext/${action.id}/`, null, {
     data: action.data
   })
+}
+function api_v1_hngjf_list(action) {
+  return moctAPI.get(`/api/v1/hngjf/`)
+}
+function api_v1_hngjf_create(action) {
+  return moctAPI.post(`/api/v1/hngjf/`, null, { data: action.data })
+}
+function api_v1_hngjf_read(action) {
+  return moctAPI.get(`/api/v1/hngjf/${action.id}/`)
+}
+function api_v1_hngjf_update(action) {
+  return moctAPI.put(`/api/v1/hngjf/${action.id}/`, null, { data: action.data })
+}
+function api_v1_hngjf_partial_update(action) {
+  return moctAPI.patch(`/api/v1/hngjf/${action.id}/`, null, {
+    data: action.data
+  })
+}
+function api_v1_hngjf_delete(action) {
+  return moctAPI.delete(`/api/v1/hngjf/${action.id}/`)
 }
 function api_v1_homepage_list(action) {
   return moctAPI.get(`/api/v1/homepage/`)
@@ -85,6 +105,12 @@ export const apiService = {
   api_v1_customtext_read,
   api_v1_customtext_update,
   api_v1_customtext_partial_update,
+  api_v1_hngjf_list,
+  api_v1_hngjf_create,
+  api_v1_hngjf_read,
+  api_v1_hngjf_update,
+  api_v1_hngjf_partial_update,
+  api_v1_hngjf_delete,
   api_v1_homepage_list,
   api_v1_homepage_read,
   api_v1_homepage_update,
