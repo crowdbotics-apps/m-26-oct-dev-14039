@@ -27,7 +27,8 @@ export default class Blank extends React.Component {
     TextInput_3: "",
     TextInput_4: "",
     DateTimePicker_5: new Date(""),
-    Switch_6: true
+    Switch_6: true,
+    DateTimePicker_8: new Date("")
   }
 
   render = () => (
@@ -40,23 +41,27 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Sample text input placeholder"
-        multiline={true}
         value={this.state.TextInput_4}
         onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
       />
       <DateTimePicker
-        showIcon={false}
         date={this.state.DateTimePicker_5}
         onDateChange={selectedDate =>
           this.setState({ DateTimePicker_5: selectedDate })
         }
       />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         value={this.state.Switch_6}
         onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
       />
       <Slider value={50} minimumValue={0} maximumValue={100} />
+      <DateTimePicker
+        showIcon={false}
+        date={this.state.DateTimePicker_8}
+        onDateChange={selectedDate =>
+          this.setState({ DateTimePicker_8: selectedDate })
+        }
+      />
     </View>
   )
 }
@@ -66,11 +71,20 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Text_2: {},
   TextInput_3: {},
   TextInput_4: {},
   DateTimePicker_5: {},
   Switch_6: {},
-  Slider_7: {}
+  Slider_7: {},
+  View_1: {},
+  Text_2: {},
+  TextInput_3: {},
+  TextInput_4: {},
+  DateTimePicker_5: {},
+  Switch_6: {},
+  Slider_7: {},
+  DateTimePicker_8: {}
 })
