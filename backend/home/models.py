@@ -37,3 +37,17 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Hngjf(models.Model):
+    "Generated Model"
+    hghgh = models.BigIntegerField(
+        blank=True,
+    )
+    nbvbnvnv12213234232 = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="hngjf_nbvbnvnv12213234232",
+    )
