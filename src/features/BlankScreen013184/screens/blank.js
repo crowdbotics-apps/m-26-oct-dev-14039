@@ -35,15 +35,14 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Number Input Placeholder"
-        keyboardType="numeric"
         value={this.state.TextInput_4}
         onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
       />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         value={this.state.Switch_5}
         onValueChange={nextChecked => this.setState({ Switch_5: nextChecked })}
       />
+      <Image style={styles.Image_6} />
     </View>
   )
 }
@@ -53,9 +52,16 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Text_2: {},
   TextInput_3: {},
   TextInput_4: {},
-  Switch_5: {}
+  Switch_5: {},
+  View_1: {},
+  Text_2: {},
+  TextInput_3: {},
+  TextInput_4: {},
+  Switch_5: {},
+  Image_6: { width: 100 }
 })
